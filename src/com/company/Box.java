@@ -1,10 +1,28 @@
 package com.company;
 
-/**
- * Created by uitschool JV on 10/4/2015.
- */
+
 public class Box {
     double width;
     double height;
     double depth;
+
+    double volume() {
+        return width*height*depth;
+    }
+
+    Box() {
+        width = 10;
+        height = 20;
+        depth = 14;
+    }
+
+    Box(double w,double h, double d) {
+        width = w;
+        height = h;
+        depth = d;
+    }
+
+    protected void finalize(){
+        System.out.println("Say Goodbye HollyWood");
+    }
 }

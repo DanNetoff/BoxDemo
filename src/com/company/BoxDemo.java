@@ -1,17 +1,17 @@
 package com.company;
 
-/**
- * Created by uitschool JV on 10/4/2015.
- */
+
 public class BoxDemo {
     public static void main(String[] args) {
         Box myBox = new Box();
-        double vol;
-        myBox.width = 10;
-        myBox.height = 20;
-        myBox.depth = 15;
+        Box myBox2 = new Box(10,10,15);
+        double vol = myBox.volume();
+        double vol2 = myBox2.volume();
 
-        vol=myBox.width * myBox.height * myBox.depth;
-        System.out.println("Volume=" + vol);
+        System.out.println(vol);
+        System.out.println(vol2);
+
+        myBox = null;
+        System.gc();
     }
 }
