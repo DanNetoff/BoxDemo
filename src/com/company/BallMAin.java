@@ -5,5 +5,6 @@ package com.company;
  */
 public class BallMAin {
     Ball2 a = new Ball2();
+    Object a1  = new Object();
 
 }
